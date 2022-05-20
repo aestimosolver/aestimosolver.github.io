@@ -6,7 +6,7 @@ description: "History and features of Aestimo 1D."
 permalink: /about.html
 ---
 
-# What is Aestimo?
+# What is Aestimo 1D?
 
 Aestimo 1D is a self-consistent Schrödinger-Poisson solver written for simulating basic physical phenomena of 1-dimensional (1-D) semiconductor heterostructures. Aestimo was started as a hobby by [Prof. Sefer Bora Lisesivdin](http://lrgresearch.org/bora) from Gazi University, Ankara, Turkey, at the beginning of 2012, and become an usable tool soon. Aestimo 1D is now used as a co-tool in an educational and scientific works.
 
