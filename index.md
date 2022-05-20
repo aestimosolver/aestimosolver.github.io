@@ -16,13 +16,14 @@ Please,
 * Report bugs or [browse opened issues](https://github.com/aestimosolver/aestimo/issues).
 * [Browse the code](https://github.com/aestimosolver/aestimo).
 * [Contribute!](development.md)
-* or socialize with the community using [FB](https://www.facebook.com/aestimosolver).
 
 # Latest Aestimo
 
 Latest stable version of Aestimo is v.2.0 (March 28th, 2020).
 
 <a href="https://github.com/aestimosolver/aestimo/releases/download/v2.0/aestimo-v.2.0-master.zip"><img src="files/download.png"/></a>
+
+Or, you can prefer to use [latest development version](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip).
 
 Please read [documentation](documentation.md) before downloading or visit [release notes](releasenotes.md) page for more information.
 
