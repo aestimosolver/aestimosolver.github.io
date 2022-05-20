@@ -2,6 +2,7 @@
 remote_theme: aestimosolver/just-the-docs
 url: "https://www.aestimosolver.org"
 logo: "/files/aestimosmall.gif"
+color_scheme: aestimo
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
