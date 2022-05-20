@@ -8,7 +8,7 @@ permalink: /about.html
 
 # What is Aestimo?
 
-Aestimo is a self-consistent Schrödinger-Poisson solver written for simulating basic physical phenomena of 1-dimensional (1-D) semiconductor heterostructures. Aestimo was started as a hobby by [Prof. Sefer Bora Lisesivdin](http://sblisesivdin.github.io) from Gazi University, Ankara, Turkey, at the beginning of 2012, and become an usable tool soon. Aestimo is now used as a co-tool in an educational and scientific works.
+Aestimo is a self-consistent Schrödinger-Poisson solver written for simulating basic physical phenomena of 1-dimensional (1-D) semiconductor heterostructures. Aestimo was started as a hobby by [Prof. Sefer Bora Lisesivdin](http://lrgresearch.org/bora) from Gazi University, Ankara, Turkey, at the beginning of 2012, and become an usable tool soon. Aestimo is now used as a co-tool in an educational and scientific works.
 
 # Who can use it?
 
