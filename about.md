@@ -8,15 +8,15 @@ permalink: /about.html
 
 # What is Aestimo?
 
-Aestimo is a self-consistent Schrödinger-Poisson solver written for simulating basic physical phenomena of 1-dimensional (1-D) semiconductor heterostructures. Aestimo was started as a hobby by [Prof. Sefer Bora Lisesivdin](http://lrgresearch.org/bora) from Gazi University, Ankara, Turkey, at the beginning of 2012, and become an usable tool soon. Aestimo is now used as a co-tool in an educational and scientific works.
+Aestimo 1D is a self-consistent Schrödinger-Poisson solver written for simulating basic physical phenomena of 1-dimensional (1-D) semiconductor heterostructures. Aestimo was started as a hobby by [Prof. Sefer Bora Lisesivdin](http://lrgresearch.org/bora) from Gazi University, Ankara, Turkey, at the beginning of 2012, and become an usable tool soon. Aestimo 1D is now used as a co-tool in an educational and scientific works.
 
 # Who can use it?
 
-Aestimo is aimed to be both educational and research tool. For educational purposes, it must be easy to understand. For research, it must have some point of computational correctness and sensitivity. Written in Python scripting language, broadly used by scientific community, combines easy access to external quality libraries and source code with speedy and accurate simulation, extensibility, and community technical support. The very basic experience with computer programming is needed (if at all) and very basic physics understanding to start manipulating existing examples or even to design new models.
+Aestimo 1D is aimed to be both educational and research tool. For educational purposes, it must be easy to understand. For research, it must have some point of computational correctness and sensitivity. Written in Python scripting language, broadly used by scientific community, combines easy access to external quality libraries and source code with speedy and accurate simulation, extensibility, and community technical support. The very basic experience with computer programming is needed (if at all) and very basic physics understanding to start manipulating existing examples or even to design new models.
 
-# Aestimo used Publications 
+# Publications using Aestimo 1D 
 
-This list may not be complete. Some parts may be wrong. If you want that your related publication can be listed here, or need a correction, please send a copy (pdf-file or reprint) or at least the cite information to: Sefer Bora Lisesivdin <sblisesivdin-AT-gmail.com>
+This list may not be complete. If you want that your related publication can be listed here, or need a correction, please send a copy (pdf-file or reprint) or at least the cite information to: Sefer Bora Lisesivdin <sblisesivdin-AT-gmail.com>
 
 **2022**
 
