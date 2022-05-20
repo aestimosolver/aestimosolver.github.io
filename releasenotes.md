@@ -8,6 +8,18 @@ permalink: /releasenotes.html
 
 # Release Notes (Changelog)
 
+### v.3.0 (not released yet)
+This is a major relase nearly again 2 years after. Because the code base is complicated and the usage of Aestimo is hard to understand, this release is mostly a simpification and clean-up release. 
+- New argument parser. Users can use -h for help, -v for version and latest package information.
+- aestimo.py is removed. Only aestimo_eh.py can be used now. Its name is changed to aestimo.py.
+- StructureForm() is redesigned.
+- New argument -d. Without using of this arg, aestimo will only calculate and write results to the output folder. No figures are shown.
+- Save log and all output at the same folder named input file
+- Logging is always on, removed from config.
+- Input files can be executed from any folder. Therefore, it is removed from the config file.
+- Config file is simplified.
+- Cython support is removed. Aestimo is a 1D solver. Therefore, simulations took only few minutes to finish. We do not need to run it with cython.
+
 ### v.2.0 (March 28, 2020)
 This is a major release nearly after 2 years. We would like to thank Hamza Hebal for his efforts and contributions. There are many new features added in this release:
 - New DD solver base on Gummel and newton map.
