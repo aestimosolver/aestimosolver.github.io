@@ -10,6 +10,16 @@ permalink: /authors.html
 
 Contributors of Aestimo. Names are listed in alphabetic order. Name, Initials, Email, Institution and Country are given, respectively.
 
+## Version 3.0
+### Committers
+* Beyza Lisesivdin, BL, beyzas-AT-gazi.edu.tr, Gazi University, Turkey.
+* Sefer Bora Lisesivdin, SBL, sblisesivdin-AT-gmail.com, Gazi University, Turkey.
+
+## Version 2.0.x
+### Committers
+* Hamza Hebal, HH, h.hebal-AT-yahoo.fr, University of Djilali Lyabes Sidi Bel Abes, Algeria.
+* Sefer Bora Lisesivdin, SBL, sblisesivdin-AT-gmail.com, Gazi University, Turkey.
+
 ## Version 1.2 
 
 ### Committers 
