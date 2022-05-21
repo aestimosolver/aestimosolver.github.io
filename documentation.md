@@ -72,7 +72,7 @@ The latest version of the program is available in zipped form from [this link](h
 In your home folder (~), let's download the latest development release (you can prefer stable release also, please visit https://www.aestimosolver.org to get the latest URL)
 
     cd ~
-    wget [https://github.com/lrgresearch/gpaw-tools/archive/refs/heads/main.zip](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip)
+    wget https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip
     unzip master.zip
 
 All files will be extracted to a folder called `aestimo-master`. We need to make some files executable, and add this folder to `~/.bashrc` file to system-wide reach.
