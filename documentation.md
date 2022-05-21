@@ -15,15 +15,15 @@ It will be completed as soon as possible.
 
 ## Overview
 
-Aestimo Self-consistent Schrödinger-Poisson Solver (simply aestimo) is a simple 1-dimensional (1-D) simulator for semiconductor heterostructures. Aestimo is started as a hobby at the beginning of 2012, and become a usable tool which can be used as a co-tool in an educational and scientific work.
+Aestimo 1D is a 1-Dimensional Self-consistent Schrödinger-Poisson Solver for semiconductor heterostructures. Aestimo 1D is started as a hobby at the beginning of 2012, and become a usable tool which can be used as a co-tool in an educational and scientific work.
 
-Hope that it also works for you. Please do not hesitate to contact us in case of any bugs found.
+Hope that it also works for you. Please do not hesitate to [contact](https://github.com/aestimosolver/aestimo/issues/new/choose) us in case of any issues found.
 
 The documentation material on this page is copyrighted. Reuse of the material on this wiki is permitted under GNU Free Documentation License 1.3.
 
 ### Current features
 
-* Material and alloys: GaAs, AlAs , InAs, InP, AlP, GaP, AlGaAs, InGaAs, InGaP and AlInP,
+* Material and alloys: GaAs, AlAs , InAs, InP, AlP, GaP, GaN, InN, AlN, CdO, MgO, ZnO, Si, Ge, AlGaAs, InGaAs, GaAsP, InAsP, InGaP, AlInP, AlGaN, InGaN, AlInN, MgZnO, CdZnO, InGaAsP and AlGaInN.
 * Band structure for gamma electrons and heavy, light and split-off holes,
 * Effective-mass method for electrons and 3×3 k.p method for holes,
 * Carrier concentrations for gamma electrons and heavy, light and split-off holes,
@@ -33,71 +33,86 @@ The documentation material on this page is copyrighted. Reuse of the material on
 * External electric field,
 * Strain for valance band calculations,
 
-### Getting Started
+## Getting Started
 
-See the see the examples subdirectory of the distribution. Also, detailed information can be found in “Using the Code” part of this document. For developers and people interested in latest development issues, there is an aestimo-devel mailing list. Subscription to the aestimo-devel mailing list is highly recommended for users for further support.
-
-### License
-
-The software is released under the GPL license, which means that everyone is free to download, use, and modify the code without charge.
-
-## Download and Installation
-
-The latest version of the program is available in zipped form from the website: https://github.com/aestimosolver/aestimo.
+Aestimo 1D can work on Linux systems. To work on Windows systems, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install). To work without any dependency problems, we suggest to you to use conda package system. With conda, user can create environments and install any software without living any dependency problem.
 
 ### Prerequisites
 
-You will need to have a recent version of Python installed on your computer. For this, please refer to Python Website, where binary packages for most platforms can be found. Additionally, you need libraries called numpy and pylab. Both can be obtained from the Scipy Website.
+If you do not prefer to use conda, you will need to have a recent version of Python and required libraries installed on your computer. For this, please refer to Python Website, where binary packages for most platforms can be found. Additionally, you need libraries called numpy, matplotlib, scipy and pylab. You use pip command to install these packages (Example: pip install numpy).
 
 For Macintosh, Python is preinstalled and related libraries can be found at Pythonmac Directory.
 
+### Conda installation
+
+Download and install the miniconda. You can say ‘yes’ or ‘no’ to initialization after installing it:
+
+    $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    $ chmod +x Miniconda3-latest-Linux-x86_64.sh
+    $ ./Miniconda3-latest-Linux-x86_64.sh
+
+then you can update miniconda:
+
+    $ eval "$(/home/$USER/miniconda3/bin/conda shell.bash hook)"
+    $ conda update conda
+
+Now, we can create an environment (here 'aes' name is used. You can use any name) and activate it:
+
+    $ conda create --name aes
+    $ conda activate aes
+
+Then, install numpy, scipy, pylab and matplotlib
+
+    $ conda install -c conda-forge numpy scipy matplotlib pylab
+
+### Download and Installation of Aestimo 1D
+
+The latest version of the program is available in zipped form from [this link](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip).
+
+In your home folder (~), let's download the latest development release (you can prefer stable release also, please visit https://www.aestimosolver.org to get the latest URL)
+
+    cd ~
+    wget [https://github.com/lrgresearch/gpaw-tools/archive/refs/heads/main.zip](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip)
+    unzip master.zip
+
+All files will be extracted to a folder called `aestimo-master`. We need to make some files executable, and add this folder to `~/.bashrc` file to system-wide reach.
+
+    cd aestimo-master/
+    chmod +x aestimo.py
+    nano ~/.bashrc
+
+Add the following line at the end of your ``~/.bashrc`` file.
+
+    export PATH=/home/YOURUSERNAME/aestimo-master:$PATH
+
+
+After editing ~/.bashrc file quit the current shell session and start a new one (or you can use `source ~/.bashrc` command). 
+
+
+
 ### Running the Code
 
-Most of the code is written in Python, and thus is platform independent. After extracting the aestimo_x.y.zip file to a folder, user may point the files that are written below in the related folder. Here x.y is the version number.
+First of all, user must prepare or use an input file. There are many example in the `examples` folder of the package:
 
-```
-main.py - The file that you need to run. 
-config.py - A simple configuration file. You must enter the input filename into this configuration file. database.py - A database for materials properties. 
-aestimo.py - Main program for conduction band calculations and gamma valley electrons. Its code is simple to understand. 
-aestimo_numpy.py - Main program which uses the Numpy library. Use this one for your conduction band calculations and gamma valley electrons. 
-aestimo_numpy_h.py - Calculator for valence band calculations and holes. 
-VBHM.py - A class file for 3x3 k.p method. 
-sample-X.py - Some samples files (X) are included in the package with prefix "sample-". 
-main_iterating.py - A script for simulating a design several times while varying a parameter over a range of values. 
-README - A readme file as you noticed. 
-README_OUTPUTS - A readme about the structure of output files. 
-COPYING - License of the software. 
-AUTHORS - List of the committers. 
-/outputs - Output folder /outputs-numpy - Output folder for numpy version.
-```
+    cd ~/aestimo-master/examples
 
-First of all, user must prepare or use an input file. This file must specified in config.py file. There are other options in config.py file like necessary output files and on/off options for result viewer and in-run messages. After specifiying an input file in config.py, user can run the aestimo easily with executing the command
+There is also an important file called `config.py`. There are other options in this file. However, without changing anything most of the input files in examples folder will work. Let's try to run any of the input files in examples folder
 
-```
-./aestimo.py
-```
+    aestimo.py -i sample_1qw_barrierdope_ingaas.py
 
-for conduction band calculations. For valence band calculations, aestimo uses a 3×3 k.p model which includes strain. After editing config.py for input file, execute the command
+After running for under a minute, calculation will be finished. Results will be written to files under folder named with input file (Here, sample_1qw_barrierdope_ingaas). If user wants to see wavefunctions, electric field distribution, potential and sigma distribution after calculation `-d` argument can be used:
 
-```
-./aestimo_eh.py
-```
+    aestimo.py -d -i sample_1qw_barrierdope_ingaas.py
 
-For simulating a design several times while varying a parameter over a range of values, edit the main_iterating.py file for your needs, and then execute it as
+To see the version of aestimo:
 
-```
-./main_iterating.py
-```
+    aestimo.py -v
 
-If the output file options are true in config.py file, results can be found in the outputs folder as:
+To see the help:
 
-```
-sigma.dat - Areal charge density 
-efield.dat - Electric field 
-potn.dat - Electric potential 
-states.dat - Values of states in the related quantum region 
-firststate.dat - Probability distribution of first quantum state
-```
+    aestimo.py -h
+    
+can be used.
 
 ## Aestimo Command Reference
 
@@ -162,5 +177,3 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program. http://www.gnu.org/copyleft/gpl.txt .
-
-For the list of contributors, see [AUTHORS](authors.md).
