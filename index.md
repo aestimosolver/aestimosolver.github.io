@@ -19,9 +19,15 @@ Please,
 
 # Latest Aestimo
 
-Latest stable version of Aestimo is v.2.0 (March 28th, 2020).
+Latest stable version of Aestimo is v3.0.0 (July 13th, 2022).
 
-<a href="https://github.com/aestimosolver/aestimo/releases/download/v2.0/aestimo-v.2.0-master.zip"><img src="files/download.png"/></a>
+<a href="https://github.com/aestimosolver/aestimo/archive/refs/tags/v3.0.0.zip"><img src="files/download.png"/></a>
+
+Or, you can use PIP:
+
+    $ pip install aestimo
+
+Please [read PIP installation part of the document](https://github.com/aestimosolver/aestimo/blob/gh-pages/documentation.md#pip-installation) for the full installation steps.
 
 Or, you can prefer to use [latest development version](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip).
 
@@ -34,6 +40,10 @@ We will appreciate if any scientific work done using Aestimo 1D will contain an 
 
 # News
 
+**July 2022**
+
+* [Aestimo 1D version 3.0](https://www.aestimosolver.org/) is released. This is a major release nearly again 2 years after. Because the code base is complicated and the usage of Aestimo is hard to understand, this release is mostly a simplification and clean-up release. Please visit to [release notes](https://www.aestimosolver.org/releasenotes.html#v300-july-13-2022) for more information.
+* 
 **November 2020**
 
 * Old aestimo_elementary branch is now moved to its own new repository and it is renamed as Aestimo EDU. With its simple and %100 pure Python code structure, it is very suitable to be used in education purposes. Code base can be found at [https://github.com/aestimosolver/aestimo-edu](https://github.com/aestimosolver/aestimo-edu) and the latest code zip packege can be downloaded at [https://github.com/aestimosolver/aestimo-edu/archive/main.zip](https://github.com/aestimosolver/aestimo-edu/archive/main.zip).
@@ -44,17 +54,17 @@ We will appreciate if any scientific work done using Aestimo 1D will contain an 
 
 **March 2020**
 
-* [Aestimo 1D version 2.0](https://www.aestimosolver.org/releasenotes.html#v20-march-28-2020) released. This is a major release nearly after 2 years. We would like to thank Hamza Hebal for his efforts and contributions. There are many new features added in this release. Please refer [Release Notes](https://www.aestimosolver.org/releasenotes.html#v20-march-28-2020) pages for details of these contributions.
+* [Aestimo 1D version 2.0](https://www.aestimosolver.org/releasenotes.html#v20-march-28-2020) is released. This is a major release nearly after 2 years. We would like to thank Hamza Hebal for his efforts and contributions. There are many new features added in this release. Please refer [Release Notes](https://www.aestimosolver.org/releasenotes.html#v20-march-28-2020) pages for details of these contributions.
 * Get [masters degree](https://www.lrgresearch.org/vacancies) in **Gazi University Physics department** with helping the code development of Aestimo! (10 Mar 2020)
 * Project website is now using *just-the-docs* theme. It is more document focused theme. We want to give more importance to documentation in future (10 Mar 2020).
 
 **July 2018**
 
-* [Aestimo 1D version 1.2.1](http://www.aestimosolver.org/releasenotes.html#v121-july-22nd-2018) released. Thanks to Robert Steed. This is a minor release that fixes some issues with using aestimo as a system package in python3 and makes some changes to the intersubband_optical_transitions.py (22 Jul 2018).
+* [Aestimo 1D version 1.2.1](http://www.aestimosolver.org/releasenotes.html#v121-july-22nd-2018) is released. Thanks to Robert Steed. This is a minor release that fixes some issues with using aestimo as a system package in python3 and makes some changes to the intersubband_optical_transitions.py (22 Jul 2018).
 
 **November 2017**
 
-* [Aestimo 1D version 1.2.0](http://www.aestimosolver.org/releasenotes.html#v12-november-6th-2017) released. Thanks to Robert Steed and Hamza Hebal for their efforts to make Aestimo better (06 Nov 2017).
+* [Aestimo 1D version 1.2.0](http://www.aestimosolver.org/releasenotes.html#v12-november-6th-2017) is released. Thanks to Robert Steed and Hamza Hebal for their efforts to make Aestimo better (06 Nov 2017).
 
 **April 2017**
 
