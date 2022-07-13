@@ -43,8 +43,9 @@ If you do not prefer to use conda, you will need to have a recent version of Pyt
 
 For Macintosh, Python is preinstalled and related libraries can be found at Pythonmac Directory.
 
+## Installation
 ### Conda installation
-
+#### Download conda and other packages
 Download and install the miniconda. You can say ‘yes’ or ‘no’ to initialization after installing it:
 
     $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -65,21 +66,21 @@ Then, install numpy, scipy, pylab and matplotlib
 
     $ conda install -c conda-forge numpy scipy matplotlib pylab
 
-### Download and Installation of Aestimo 1D
+#### Download and Installation of Aestimo 1D
 
 The latest version of the program is available in zipped form from [this link](https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip).
 
 In your home folder (~), let's download the latest development release (you can prefer stable release also, please visit https://www.aestimosolver.org to get the latest URL)
 
-    cd ~
-    wget https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip
-    unzip master.zip
+    $ cd ~
+    $ wget https://github.com/aestimosolver/aestimo/archive/refs/heads/master.zip
+    $ unzip master.zip
 
 All files will be extracted to a folder called `aestimo-master`. We need to make some files executable, and add this folder to `~/.bashrc` file to system-wide reach.
 
-    cd aestimo-master/
-    chmod +x aestimo.py
-    nano ~/.bashrc
+    $ cd aestimo-master/
+    $ chmod +x aestimo.py
+    $ nano ~/.bashrc
 
 Add the following line at the end of your ``~/.bashrc`` file.
 
@@ -88,29 +89,44 @@ Add the following line at the end of your ``~/.bashrc`` file.
 
 After editing ~/.bashrc file quit the current shell session and start a new one (or you can use `source ~/.bashrc` command). 
 
+### PIP Installation
+Instead of Conda, you may prefer PIP installation. However, PIP package may not be up-to-date. To download and install aestimo and required packages use:
 
+    $ pip install aestimo
 
-### Running the Code
+Aestimo will be installed to `~/.local/lib/python3.8/site-packages/aestimo` folder. Here, 3.8 is the python's version, therefore it can be different on your computer. We need to make some files executable, and add this folder to `~/.bashrc` file to system-wide reach.
+
+    $ cd ~/.local/lib/python3.8/site-packages/aestimo/
+    $ chmod +x aestimo.py
+    $ nano ~/.bashrc
+
+Add the following line at the end of your ``~/.bashrc`` file.
+
+    export PATH=$HOME/.local/lib/python3.8/site-packages/aestimo:$PATH
+
+Please do not just copy and paste above lines and forgot to control your folder information (3.8 can be different?). After editing ~/.bashrc file quit the current shell session and start a new one (or you can use `source ~/.bashrc` command). 
+
+## Running the Code
 
 First of all, user must prepare or use an input file. There are many example in the `examples` folder of the package:
 
-    cd ~/aestimo-master/examples
+    $ cd ~/aestimo-master/examples
 
 There is also an important file called `config.py`. There are other options in this file. However, without changing anything most of the input files in examples folder will work. Let's try to run any of the input files in examples folder
 
-    aestimo.py -i sample_1qw_barrierdope_ingaas.py
+    $ aestimo.py -i sample_1qw_barrierdope_ingaas.py
 
 After running for under a minute, calculation will be finished. Results will be written to files under folder named with input file (Here, sample_1qw_barrierdope_ingaas). If user wants to see wavefunctions, electric field distribution, potential and sigma distribution after calculation `-d` argument can be used:
 
-    aestimo.py -d -i sample_1qw_barrierdope_ingaas.py
+    $ aestimo.py -d -i sample_1qw_barrierdope_ingaas.py
 
 To see the version of aestimo:
 
-    aestimo.py -v
+    $ aestimo.py -v
 
 To see the help:
 
-    aestimo.py -h
+    $ aestimo.py -h
     
 can be used.
 
