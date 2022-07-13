@@ -12,7 +12,7 @@ permalink: /releasenotes.html
 
 - n/a
 
-### v.3.0.0
+### v.3.0.0 (July 13, 2022)
 This is a major relase nearly again 2 years after. Because the code base is complicated and the usage of Aestimo is hard to understand, this release is mostly a simpification and clean-up release. 
 - New argument parser. Users can use -h for help, -v for version and latest package information.
 - aestimo.py is removed. Only aestimo_eh.py can be used now. Its name is changed to aestimo.py.
