@@ -43,7 +43,7 @@ We will appreciate if any scientific work done using Aestimo 1D will contain an 
 **July 2022**
 
 * [Aestimo 1D version 3.0](https://www.aestimosolver.org/) is released. This is a major release nearly again 2 years after. Because the code base is complicated and the usage of Aestimo is hard to understand, this release is mostly a simplification and clean-up release. Please visit to [release notes](https://www.aestimosolver.org/releasenotes.html#v300-july-13-2022) for more information.
-* 
+ 
 **November 2020**
 
 * Old aestimo_elementary branch is now moved to its own new repository and it is renamed as Aestimo EDU. With its simple and %100 pure Python code structure, it is very suitable to be used in education purposes. Code base can be found at [https://github.com/aestimosolver/aestimo-edu](https://github.com/aestimosolver/aestimo-edu) and the latest code zip packege can be downloaded at [https://github.com/aestimosolver/aestimo-edu/archive/main.zip](https://github.com/aestimosolver/aestimo-edu/archive/main.zip).
