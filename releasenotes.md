@@ -10,7 +10,7 @@ permalink: /releasenotes.html
 
 ### Development Version
 
-- n/a
+- The usage of deprecated function alen() is fixed.
 
 ### v.3.0.0 (July 13, 2022)
 This is a major relase nearly again 2 years after. Because the code base is complicated and the usage of Aestimo is hard to understand, this release is mostly a simpification and clean-up release. 
