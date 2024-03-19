@@ -1,6 +1,7 @@
 # theme: jekyll-theme-dinky
 remote_theme: aestimosolver/just-the-docs
-url: "https://aestimosolver.github.io/aestimo"
+baseurl: "/aestimo" # the subpath of your site, e.g. /blog
+url: "https://aestimosolver.github.io"
 logo: "/files/aestimologo.png"
 color_scheme: aestimo
 # Enable or disable the site search
